@@ -67,7 +67,7 @@ let score = 0;
 const loadQuiz = () => {
   const { question, options } = quizData[currentQuiz];
   //   console.log(question);
-  questions.innerText = `${currentQuiz + 1} : ${question}`;
+  questions.innerText = `${currentQuiz + 1} :- ${question}`;
   scores.innerHTML = `Score : ${score} / ${quizData.length}`;
   options.forEach(
     (crntoption, index) =>

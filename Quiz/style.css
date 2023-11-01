@@ -65,6 +65,9 @@ input[type="radio"]:checked {
   background-color: #8ec5fc;
   border-color: #8ec5fc;
 }
+
+/* BUTTON */
+
 .btn {
   padding: 2rem 5rem;
   display: flex;
@@ -72,7 +75,6 @@ input[type="radio"]:checked {
   justify-content: space-between;
 }
 
-/* CSS */
 .button {
   all: unset;
   width: 100px;
