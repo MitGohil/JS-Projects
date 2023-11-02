@@ -19,8 +19,12 @@
   /* transition-delay: 1s; */
 }
 .calc:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 10px 20px 38px,
-    rgba(0, 0, 0, 0.22) 20px 25px 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 10px 20px 38px,
+    rgba(0, 0, 0, 0.22) 20px 25px 12px; */
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 20px;
+  transform: scale(1);
+  background: #8080800d !important;
+  color: #000 !important;
 }
 .calc form input {
   border: 0;
@@ -39,9 +43,14 @@
 }
 .calc form input:hover {
   border-radius: 50px;
-  box-shadow: -8px -8px 15px rgba(233, 7, 7, 0.852),
+  /* box-shadow: -8px -8px 15px rgba(233, 7, 7, 0.852),
     5px 5px 15px rgba(5, 46, 229, 0.621);
-  color: darkblue;
+  color: darkblue; */
+
+  box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 30px;
+  transform: scale(1);
+  background: #8080800d !important;
+  color: #000 !important;
 }
 form .display {
   display: flex;
