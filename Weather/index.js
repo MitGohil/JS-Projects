@@ -2,26 +2,26 @@ const apiKey = "de875e9664c4cb49c08b83bad5e71079";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
-const [
-  searchBox,
-  searchBtn,
-  weatherIcon,
-  citi,
-  temp,
-  humidity,
-  pressure,
-  wind,
-] = document.querySelectorAll(
-  ".search input,  .search button,  .weather-icon,.city,.temp, .humidity,  .pressure,.wind"
-);
-// const searchBox = document.querySelector(".search input");
-// const searchBtn = document.querySelector(".search button");
-// const weatherIcon = document.querySelector(".weather-icon");
-// const citi = document.getElementsByClassName("city");
-// const temp = document.getElementsByClassName("temp");
-// const humidity = document.getElementsByClassName("humidity");
-// const pressure = document.getElementsByClassName("pressure");
-// const wind = document.getElementsByClassName("wind");
+// const [
+//   searchBox,
+//   searchBtn,
+//   weatherIcon,
+//   citi,
+//   temp,
+//   humidity,
+//   pressure,
+//   wind,
+// ] = document.querySelectorAll(
+//   ".search input,  .search button,  .weather-icon,.city,.temp, .humidity,  .pressure,.wind"
+// );
+const searchBox = document.querySelector(".search input");
+const searchBtn = document.querySelector(".search button");
+const weatherIcon = document.querySelector(".weather-icon");
+const citi = document.getElementsByClassName("city");
+const temp = document.getElementsByClassName("temp");
+const humidity = document.getElementsByClassName("humidity");
+const pressure = document.getElementsByClassName("pressure");
+const wind = document.getElementsByClassName("wind");
 
 async function checkWeather(city) {
   const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
