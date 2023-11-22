@@ -1,0 +1,417 @@
+/**
+ * Alina Basova's stylesheet
+ * http://alinabasova.com
+ */
+
+ .clearfix:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    clear: both;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+}
+
+.button {
+    width: 8em;
+    height: 2.5em;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.header {
+    color: #666;
+    width: 300px;
+    height: 100%;
+    float: left;
+    background: #efefef;
+    padding: 10% 2em 0 2em;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.header a {
+    color: #666;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #F73600;
+}
+
+.site-logo img {
+    width: 90%;
+}
+
+.site-description {
+    font-size: 0.9em;
+    padding-top: 1em;
+}
+
+.site-nav {
+    margin: 2em 0;
+}
+
+.site-nav li {
+    margin: 0 0 0.5em 0;
+}
+
+.open-add-company {
+    background: #271449;
+    color: #fff;
+    margin: 10px auto;
+    display: block;
+    font-size: 1.1em;
+    font-weight: normal;
+    border-radius: 3px;
+}
+
+.open-add-company:hover {
+    background: #3A1F69;
+}
+
+.social {
+    margin-top: 25%;
+    text-align: center;
+    width: 100%;
+    left: 0;
+}
+
+.social li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social li a {
+    width: 35px;
+    height: 35px;
+    display: block;
+    background: url(https://i.imgur.com/xDNmMaZ.png) no-repeat;
+    background-color: #888;
+    margin: 5px;
+    transition: none;
+}
+
+.social li a:hover {
+    background-color: #666;
+    transition: all 1s ease-out;
+}
+
+.social .fb a {
+    background-position: 9px 6px;
+}
+
+.social .tw a {
+    background-position: -26px 6px;
+}
+
+.social .ln a {
+    background-position: -60px 5px;
+}
+
+.wrapper {
+    width: auto;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.main-grid {
+    width: 100%;
+}
+
+.grid-item {
+    width: 50%;
+    height: 550px;
+    position: relative;
+    float: left;
+    transition: all 1s;
+    background: #eee;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.background-image {
+    background-position: center;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 1s all;
+}
+
+.hover-block {
+    opacity: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.5s;
+}
+
+.item-title {
+    font-size: 1.8em;
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    color: #fff;
+    font-weight: 300;
+}
+
+.item-info {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin: 5% 0 0 5%;
+    color: #aaa;
+}
+
+.control-buttons {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.grid-item .button {
+    display: block;
+    margin: 10px;
+    background: #FFF700;
+    color: #333;
+}
+
+.grid-item .button:hover {
+    box-shadow: 0 0 0 1px #fff;
+}
+
+.grid-item:hover .hover-block {
+    opacity: 1;
+}
+
+.popup-window {
+    position: fixed;
+    top: 500%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -300px;
+    margin-top: -200px;
+    transition: all 1s;
+    padding: 1em 2em;
+    background: #eee;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: inset 1px 1px 10px -5px #fff;
+    overflow-y: auto;
+    z-index: 6;
+}
+
+.popup-window.opened {
+    top: 50%;
+}
+
+.popup-window .button {
+    background: #271449;
+    color: #fff;
+    font-weight: normal;
+    float: right;
+    margin: 20px 15px;
+    border-radius: 3px;
+}
+
+.popup-window .button:hover {
+    background: #3A1F69;
+}
+
+.add-company-form li {
+    margin: 10px 0;
+}
+
+.add-company-form input {
+    background: #aaa;
+    border: none;
+    font-size: 1em;
+    padding: 0.2em;
+    height: 1.5em;
+    width: 20em;
+}
+
+.add-company-form input:focus {
+    outline: 1px solid #666;
+}
+
+.add-company-form label {
+    width: 8em;
+    display: inline-block;
+}
+
+.popup-window .pixel {
+    font-size: 1.1em;
+    width: calc(33% - 3em);
+    height: 3em;
+    display: table;
+    float: left;
+    margin: 0.5em;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 3px 3px 15px -3px #333;
+    transition: all 0.5s;
+}
+
+.popup-window .pixel:hover {
+    box-shadow: 3px 3px 25px -3px #333;
+}
+
+.popup-window .pixel .title {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.footer {
+    color: #aaa;
+    padding: 30px 0 30px 30px;
+    font-family: arial;
+    font-size: 0.8em;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(6, 5, 26, 0.95);
+    opacity: 0;
+    z-index: -1;
+}
+
+#overlay.above {
+    z-index: 5;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.fadeout {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+@media all and (max-width: 1200px) {
+    .grid-item {
+        height: 300px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    body {
+        font-size: 17px;
+    }
+
+    .grid-item {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .header {
+        width: 250px;
+        transition: width 1s;
+    }
+
+    .popup-window {
+        width: 500px;
+        margin-left: -250px;
+    }
+
+    .add-company-form input {
+        width: 16em;
+    }
+}
+
+@media all and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+
+    .site-logo img {
+        width: 60%;
+    }
+
+    .social {
+        margin-top: 0;
+        transform: scale(0.7, 0.7);
+    }
+
+    .site-logo {
+        float: left;
+    }
+
+    .site-nav {
+        text-align: center;
+        clear: both;
+    }
+
+    .site-nav li {
+        display: inline-block;
+        margin: 0.5em;
+    }
+
+    .wrapper {
+        height: auto;
+        overflow: visible;
+    }
+
+    .grid-item {
+        height: 400px;
+    }
+
+    .popup-window {
+        width: 500px;
+        margin-left: -250px;
+    }
+
+    .add-company-form input {
+        width: 18em;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    .site-description {
+        clear: both;
+    }
+
+    .popup-window {
+        width: 90%;
+        height: 450px;
+        left: 5%;
+        margin-left: 0;
+    }
+
+    .popup-window .pixel {
+        float: none;
+        width: 50%;
+        margin: 1em auto;
+    }
+}

@@ -1,4 +1,5 @@
 const apiKey = "de875e9664c4cb49c08b83bad5e71079";
+// const apiKey = "892094d71fbdaee329d134cd4482d369";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
@@ -9,10 +10,10 @@ const apiUrl =
 //   citi,
 //   temp,
 //   humidity,
-//   pressure,
 //   wind,
+//   pressure,
 // ] = document.querySelectorAll(
-//   ".search input,  .search button,  .weather-icon,.city,.temp, .humidity,  .pressure,.wind"
+//   ".search input,  .search button,  .weather-icon,.city,.temp, .humidity,.wind,.pressure"
 // );
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
@@ -28,12 +29,11 @@ async function checkWeather(city) {
   var data = await response.json();
   console.log(data);
 
-  citi.innerHTML = data.name;
-  temp.innerHTML = Math.round(data.main.temp) + "°c";
-  humidity.innerHTML = data.main.humidity + "%";
-  pressure.innerHTML = data.main.pressure + "Pa";
-  // pressure.innerHTML = data.main.pressure;
-  wind.innerHTML = data.wind.speed + " km/h";
+  citi[0].innerHTML = data.name;
+  temp[0].innerHTML = Math.round(data.main.temp) + "°c";
+  humidity[0].innerHTML = data.main.humidity + "%";
+  pressure[0].innerHTML = data.main.pressure + " Pa";
+  wind[0].innerHTML = data.wind.speed + " km/h";
 
   if (data.weather[0].main == "Clouds") {
     weatherIcon.src = "./img/clouds.png";

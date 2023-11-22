@@ -74,6 +74,7 @@ body {
   display: flex;
   align-items: center;
   text-align: left;
+  width: 33%;
 }
 .col img {
   width: 40px;
